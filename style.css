@@ -1,0 +1,48 @@
+*{ border-radius: 12px;
+}
+body{
+    background-image: linear-gradient(gray,rgb(0, 132, 255),rgb(0, 92, 128));
+    min-height: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+}
+section{
+    background-color: white;
+    height:400px;
+    width: 400px;;
+    margin:200px auto 0 auto;
+     position: relative;
+     transition: all 1s;
+}
+
+section:hover{
+    height: 450px;
+
+
+}
+img{
+    height: 350px;
+    width: 350px;
+    position: absolute;
+    left: 25px;
+top: -100px;
+transition: all 0.5s;
+}
+.container{
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    text-align: center;
+    
+    transition:  all 5s;
+    opacity: 0;
+}
+section:hover .container{
+    opacity: 1;
+}
+section:hover img{
+
+    top: -150px;
+    border-radius: 50%;
+    transform: rotate(720deg);
+}
